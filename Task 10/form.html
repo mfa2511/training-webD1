@@ -1,94 +1,123 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Document</title>
+    <title>Task 10</title>
     <style>
         body{
-            background-color: gold;
+            background-color: bisque;
         }
         body:hover{
-            background-color: goldenrod;
+            background-color: beige;
         }
-        .d1{
-            width: 450px;
-            height: 550px;
+        .container1{
+            width: 550px;
+            height: 600px;
             border: 2px solid red;
             background-color: blue;
-            border-radius: 20px;
+            border-radius: 15px;  
             margin: auto;
-        }
-        .d1:hover{
-            background-color: blueviolet;
-        }
-        .d2{
-            width: 350px;
-            height: 450px;
-            border: 2px solid salmon;
-            margin: auto;
-            margin-top: 45px;
-            background-color: #fefbda;   
-        }
-        .d2:hover{
-            background-color: burlywood;
-        }
-        .form {
-            margin-top: 75px;
-            background-color: chocolate;
-            height: 295px;
-            padding: 19px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px yellowgreen;
-            width: 300px;
-            font-weight: bold;
-        }
-        input {
-            width: 75%;
-            padding: 6px;
-            margin-bottom: 15px;
-            border: 2px solid grey;
-            border-radius: 4px;
-            background-color: wheat;
-        }
-        button:hover {
-            background-color: red;
-        }
-         h2 {
             text-align: center;
+        }
+        .container1:hover{
+            background-color: rgb(121, 10, 10);
+        }
+        .container2:hover{
+            background-color: brown;
+        }
+        h1{
+            color: brown;
+            background-color: rgb(233, 239, 244);           
+        }
+        h1:hover{
+            background-color: bisque;
+        }
+        button{
+            background-color: rgb(104, 62, 205);
+        }
+        button:hover{
+            background-color: bisque;
+        }
+        .container2{
+            width: 450px;
+            height: 450px;
+            background-color: rgb(43, 95, 226);
+            text-align: center;
+            margin: auto;
+            padding-top: 12px;
             margin-bottom: 20px;
-            background-color: blue;
+            
         }
-        h2:hover{
-             background-color: blueviolet;
+        input{
+            border-radius: 5px;
+            border: 1px salmon;           
         }
-        input:hover{
-            background-color: darkorange;
+        a{
+            background-color: rgba(16, 216, 183, 0.991);
+            margin: 223px;
+            padding-bottom: 5px;           
+        }
+        div{
+            margin-top: 12px;
         }
     </style>
 </head>
 <body>
-    <div>
-        <center><div class="d1"> 
-            <div class="d2">
-                
-                <div class="form">
-                    <h2>Basic Form</h2>
-                    <form>
-                      <label for="name">Name:</label>
-                      <input style="color: blue;" type="text" id="name" name="name" placeholder="Enter your name" required>
-                
-                      <label for="email">Email:</label>
-                      <input style="color: blue;" type="email" id="email" name="email" placeholder="Enter your email" required>
-                
-                      <label for="Subject">Enter Your Subject:</label>
-                      <input style="color: blue;" type="Subject" id="Subject" name="Subject" placeholder="Enter your subject" required><br>
-                     
-                      <label for="Choose your age">Choose your age</label>
-                      <input type="number" id="number" name="number" placeholder="Enter your age" required>
+    <div class="container1">
+    <center><h1>Basic Form</h1></center>
+    <form>
+        
+       <div class="container2">
+        <div class="form-input">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Write your name" required><br><br></div>
+        <div class="form-input">
+         <label for="father name">Father Name:</label>
+         <input type="text" id="father name" name="father name" placeholder="Enter your Father name" required><br><br></div>
+         <div class="form-input"><label for="mother name">Mother Name:</label>
+         <input type="text" id="mother name" name="mother name" placeholder="Enter your Mother name" required><br><br></div>
+        <div class="form-input">
+        <label for="mobile">Mobile No:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Write your mobile number" required><br><br>
+        </div>
+        <div class="form-input">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="write your email address"><br><br>
+        </div>
+        
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="Other" required>
+        <label for="other">Other</label><br><br>
 
-                      <button style="color: blue;" type="submit">Submit</button>
-                    </form>
-                  </div>
-        </div></center>
+        
+        <label>Education Completed:</label><br>
+        <input type="checkbox" id="highschool" name="education" value="High School">
+        <label for="highschool">High School</label>
+        <input type="checkbox" id="bachelors" name="education" value="Bachelors">
+        <label for="bachelors">Bachelors</label>
+        <input type="checkbox" id="masters" name="education" value="Masters">
+        <label for="masters">Masters</label>
+        <input type="checkbox" id="doctorate" name="education" value="Doctorate">
+        <label for="doctorate">Doctorate</label><br><br>
+
+        
+        <label for="tea">Do you like tea?</label>
+        <select id="tea" name="tea">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+            <option value="Sometimes">Sometimes</option>
+        </select><br><br>
+
+        
+        <button type="submit">Submit</button><br>
+        <p>if you want to reset:
+        <button type="reset">Reset</button></p>
+       </div>
+       <div><a href="form.html">Another form</a></div>
+    </form>
     </div>
 </body>
 </html>
