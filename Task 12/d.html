@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retail & Wholesale Shop</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+   <style>
+    body{
+        color: rgb(86, 44, 2);
+    }
+    header{
+        background-color: rgb(86, 44, 2);
+        color: #fff;
+        text-align: center;
+        padding: 1em;
+    }
+    header:hover{
+        background-color:  rgb(102, 64, 23);
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+    }
+    nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+
+    }
+    h2 a{
+      text-decoration: none;
+      color: rgb(86, 44, 2);
+    }
+    div a{
+      text-decoration: none;
+      color: black;
+    }
+    nav ul li a:hover {
+    color: aqua;
+    font-size: 1.2rem;
+    }
+    section {
+  padding: 2em;
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+    }
+    section:hover{
+        background-color: aliceblue;
+    }
+    .product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1em;
+   }
+   .product{
+    padding-block: 15px 30px;
+    background-color: wheat;
+    border-radius: 15px;
+    border: 2px solid rgb(193, 193, 194);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.5);
+    
+   }
+   .product:hover{
+    background-color: blanchedalmond;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transform: scale(1.1);
+
+   }
+   .product img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(219, 26, 26, 0.5);
+    }
+    footer {
+  background: rgb(86, 44, 2);
+  color: #fff;
+  text-align: center;
+  padding: 3em;
+    }
+    footer:hover{
+      background-color: rgb(102, 64, 23);
+    }
+    /* Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+   </style>
+</head>
+<body>
+  <header>
+    <h1>Retail & Wholesale Hub</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#wholesale">Wholesale Inquiry</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to Our Store</h2>
+    <img src="main page image/web-header-2_2x.webp" alt="image" width="100%"
+    <p>Offering premium products at retail & wholesale prices.</p>
+  </section>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product"><img src="main page image/P1.avif" alt="Product 1"><a href="soap.html"><p>Daily Home Care</a></p></div>
+      <div class="product"><img src="main page image/top-biscuit-brands-in-India.webp" alt="Product 2"><a href="biscuit.html"><p>Biscuit</p></a></div>
+      <div class="product"><img src="main page image/m3.jpeg" alt="Product 3"><a href="beverage.html"><p>Beverage</a></p></div>
+      <div class="product"><img src="t4.webp" alt="Product 3"><p>MarieGold</p></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 style="cursor: pointer;"><a href="About.html">About Us</h2></a>
+    <p>Providing quality goods to customers and bulk buyers.</p>
+    
+  </section>
+
+  <section id="wholesale">
+    <h2>Wholesale Inquiry</h2>
+    <p>Contact us for bulk pricing and partnerships.</p>
+  </section>
+
+  <!-- <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@shop.com | Phone: +91 9876543210</p>
+  </section> -->
+
+  <footer>
+    <h2 id="contact">Contact Us</h2>
+    <p>Email: info@shop.com | Phone: +91 9876543210</p>
+    <br><br>
+    <p>© 2025 Retail & Wholesale Hub. All rights reserved.</p>
+  </footer>
+</body>
+</html>

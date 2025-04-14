@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 250px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 8px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+       <script>
+        function data(event){
+          var a= document.getElementById("userid").value;
+          var b= document.getElementById("number").value;
+          var c= document.getElementById("password").value;
+          var d= document.getElementById("confirm-password").value;
+
+          if(a==""||b==""||c==""||d==""){
+            alert("All Fields are mendatory");
+          }
+          if (a.length < 5) {
+                alert("Name must be at least 5 characters!");
+                return false;
+            }
+          if (b.length !==10 || isNaN(b)) {
+                alert("Number must be 10 digits");
+                return false;
+            }
+
+            if (c.length < 9  ) {
+                alert("Password must be at least 8 characters");
+                return false;
+            }
+            if (c !== d) {
+                alert("Passwords do not match!");
+                return false;
+            }
+            alert("Form submitted successfully!");
+            return true;
+        }
+       </script>
+
+    <form onsubmit="data(event)">
+        <label for="userid">User Id:</label>
+        <input type="text" id="userid" placeholder="Enter text">
+
+        <label for="number">Enter Number:</label>
+        <input type="tel" id="number" placeholder="Enter number"
+
+        <label for="password">Enter Password:</label>
+        <input type="password" id="password" placeholder="Enter password"
+
+        <label for="confirm-password">Enter Confirm Password:</label>
+        <input type="password" id="confirm-password" placeholder="Enter confirm password">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
