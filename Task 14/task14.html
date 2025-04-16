@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14</title>
+</head>
+<body>
+    <script>
+        function filternegativenum(){
+        let x = [1,-98,2,56,-78]
+        let y = x.filter(Number=>Number>=0)
+        document.write("filter negative number is: ", y.join(","))
+        }
+
+        function differencefrom13(num){
+            // let num = 39
+            if(num>13){
+                return  2*(num-13)
+            }else{
+                return (num-13)
+            }
+        }
+        filternegativenum()
+
+        let result = differencefrom13(39)
+        document.write("<br>result is: ", result)
+
+        
+    </script>
+</body>
+</html>

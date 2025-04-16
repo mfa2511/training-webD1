@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+</head>
+<body>
+    <script>
+        function printinfo(){
+           document.write("<h2>Name: MD FATEH ALAM</h2>")
+           document.write("<p>Address: Karichak Chhapki Begusarai-851131</p>")
+        }
+        function checktwovariable(){
+            let x=4, y=5
+            if(x==y){
+                document.write("<p>two variable is equal</p>")
+            }else{
+                document.write("<p>two variable is not equal</p>")
+            }
+        }
+        function String(){
+            let x= "md fateh" , y= " alam" 
+            let z= x.concat(" ",y)
+            let z1= z.toUpperCase();
+            document.write(z)
+            document.write("<br><br>")
+            document.write(z1)
+        }
+        function convertbytes(){
+            let x= "fateh"
+            // let encoder = new TextEncoder();
+            // let bytes = encoder.encode(x);
+            document.write("<br><br>")
+            document.write("length of string: ",x.length)
+            // document.write("Length in bytes: " + bytes.length);
+
+        }
+        function roundnumber(){
+             let x= 3.53453
+             document.write("<br><br>")
+             document.write("original number is: ", x)
+             let rounded_num = Math.round(x)
+             document.write("<br><br>")
+             document.write("rounded number is: ", rounded_num)
+        }
+        printinfo()
+        checktwovariable()
+        String()
+        convertbytes()
+        roundnumber()
+    </script>
+</body>
+</html>
