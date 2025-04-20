@@ -4,21 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 13</title>
+    <style>
+        body{
+            background-color: bisque;
+        }
+
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: 7px solid yellow;
+            border-radius: 9px;
+            margin: auto;
+            text-align: center;
+            padding: 5px;
+            color: wheat;
+        }
+
+        P{
+            background-color: beige;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <script>
+     <p>QUESTION NO:01</p>
+        <div>
+        <script>
         function printinfo(){
            document.write("<h2>Name: MD FATEH ALAM</h2>")
-           document.write("<p>Address: Karichak Chhapki Begusarai-851131</p>")
+           document.write("Address: Karichak Chhapki Begusarai-851131")
         }
+         printinfo()
+           </script>
+        </div>
+     
+        <p>QUESTION NO:02</p>
+        <div>
+            <script>
         function checktwovariable(){
             let x=4, y=5
             if(x==y){
-                document.write("<p>two variable is equal</p>")
+                document.write("two variable is equal")
             }else{
-                document.write("<p>two variable is not equal</p>")
+                document.write("two variable is not equal")
             }
         }
+        checktwovariable()
+            </script>
+        </div>
+
+        <p>QUESTION NO:03</p>
+        <div>
+            <script>
         function String(){
             let x= "md fateh" , y= " alam" 
             let z= x.concat(" ",y)
@@ -27,6 +65,14 @@
             document.write("<br><br>")
             document.write(z1)
         }
+        String()
+
+            </script>
+        </div>
+
+        <p>QUESTION NO:04</p>
+        <div>
+            <script>
         function convertbytes(){
             let x= "fateh"
             // let encoder = new TextEncoder();
@@ -36,6 +82,13 @@
             // document.write("Length in bytes: " + bytes.length);
 
         }
+        convertbytes()
+        </script>
+         </div>
+
+         <p>QUESTION NO:05</p>
+         <div>
+            <script>
         function roundnumber(){
              let x= 3.53453
              document.write("<br><br>")
@@ -44,11 +97,9 @@
              document.write("<br><br>")
              document.write("rounded number is: ", rounded_num)
         }
-        printinfo()
-        checktwovariable()
-        String()
-        convertbytes()
         roundnumber()
-    </script>
+        </script>
+        </div>
+    
 </body>
 </html>
