@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Table</title>
-    <style>
-        h2{
+  <title>Student Details Table</title>
+  <style>
+   h2{      text-align: center;
             margin: 15px;
             background-color: brown;
         }
@@ -30,82 +30,51 @@
         th:hover{
             background-color: mediumseagreen;
         }
-        body{
+       body{
             background-color: blue;
         }
-    </style>
+
+  </style>
 </head>
 <body>
-    <center><h2>STUDENT LIST</h2></center>
-    <hr color="gold">
-    <center><table>
-        <tr>
-            <th>SI NO.</th>
-            <th>NAME</th>
-            <th>ROLL NO.</th>
-            <th>EMAIL ID</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>MD FATEH ALAM</td>
-            <td>FS_25_12</td>
-            <td>mdfatehalam25112002@gmail.com</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>MD ARMAN</td>
-            <td>FS_25_15</td>
-            <td>arman786@gmail.com</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>MD FAREED KHAN</td>
-            <td>FS_25_11</td>
-            <td>fareed31@gmail.com</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>MD WASIUZAMMAN</td>
-            <td>FS_25_20</td>
-            <td>Wasi2004@gmail.com</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>SUMAN SHAH</td>
-            <td>FS_25_41</td>
-            <td>Sumanrdx@gmail.com</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>AZKAR SIDDIQUI</td>
-            <td>FS_25_21</td>
-            <td>azkaar123@gmail.com</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>ANIKET KUMAR</td>
-            <td>fs_25_22</td>
-            <td>Aniketyadav@gmail.com</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>HAMZA HIZAZI</td>
-            <td>FS_25_FS</td>
-            <td>hz905@gmail.com</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>PUSHPANSHO</td>
-            <td>FS_25_FS1</td>
-            <td>pushpanshu@gmail.com</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>NAME NOT FOUND</td>
-            <td>FS_25_NNF1</td>
-            <td>namenotfound@gmail.com</td>
-        </tr>
-    </table>
-    </center>
+
+<h2>Student Details</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Name</th>
+    <th colspan="2" class="academic-header">Academic Info</th>
+  </tr>
+  <tr class="academic-header">
+    <th>Registration No.</th>
+    <th>CGPA till Last Semester</th>
+  </tr>
+  <tr>
+    <td>fareed Khan</td>
+    <td>23155135031</td>
+    <td>not completed</td>
+  </tr>
+  <tr>
+    <td>Md Arman</td>
+    <td>23155135036</td>
+    <td>not completed</td>
+  </tr>
+  <tr>
+    <td>Aniket Kumar</td>
+    <td>23155135035</td>
+    <td>not completed</td>
+  </tr>
+  <tr>
+    <td>Hamza hizazi</td>
+    <td>24155135905</td>
+    <td>new student</td>
+  </tr>
+  <tr>
+    <td>Azkar siddiqui</td>
+    <td>24155135034</td>
+    <td>not completed</td>
+  </tr>
+</table>
+
 </body>
 </html>
